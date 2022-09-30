@@ -1,0 +1,12 @@
+name: teste
+on: [push]
+jobs:
+  check-application:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Instalar os módulos
+        run: yarn
+      - name: Rodar os testes
+        run: yarn test
+        run: node soma.js
