@@ -8,5 +8,6 @@ jobs:
       - name: Instalar os módulos
         run: yarn
       - name: Rodar os testes
-      - run: yarn test
-      - run: node soma.js
+        run: yarn test
+      - name: Executar o programa
+        run: node soma.js
